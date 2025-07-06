@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+   <!-- MENU HORIZONTAL DE LINKS -->
+  <header class="menu-topo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html" id="selected">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <!-- SEÇÃO PARA SOBRE MIM -->
+  <main class="conteudo">
+    <div class="foto">
+      <img src="assets/EU.jpg" alt="Foto minha">
+    </div>
+
+    <section id="sobre" class="secao">
+      <h1>Sobre mim</h1>
+      <p>
+      Olá, eu sou o Lucas Nogueira Delegredo, RU: 5071970, e esse é o meu portfolio!
+      </p><br>
+      <p>
+      Atualmente, estou coordenando projetos de inovação na Scania Latin America, liderando iniciativas que impactam diretamente a manutenção de ativos e a digitalização de processos. Com foco em otimizar a gestão e operação de equipamentos industriais, sou responsável pela implementação do projeto de Telemetria Avançada, que coleta dados cruciais sobre o uso de veículos industriais em toda a planta. A partir dessas informações, desenvolvemos ações que geram valor real e mensurável para a empresa.
+        </p><br>
+        <p>
+        Além disso, carrego uma grande bagagem em projetos que envolvem automatização de processos, inteligência de dados para análise de falhas de ativos e gerenciamento de budgets e cronogramas de implementações e entregas.
+    </p><br>
+    <p>
+        Sou um entusiasta da tecnologia e acredito que a integração entre conhecimento teórico e a prática é fundamental para gerar soluções inovadoras e impactantes. Sempre busco desafios que me permitam aplicar minhas habilidades técnicas, ao mesmo tempo em que continuo aprendendo e crescendo como profissional.
+    </p>
+
+    </section> <br>
+
+    <!-- SEÇÃO PARA FORMAÇÃO -->
+    <section id="formacao" class="secao">
+  <h2>Formação</h2>
+  <ol class="lista-formacao">
+    <li>
+      <div class="item-formacao">
+        <img src="assets/ufabc-logo.png" alt="UFABC" class="img-formação">
+        <span>Graduação em Ciência da Computação - Universidade Federal do ABC</span>
+      </div>
+    </li>
+    <li>
+      <div class="item-formacao">
+        <img src="assets/uninter-logo.png" alt="Uninter" class="img-formação">
+        <span>Tecnólogo em Análise e Desenvolvimento de Sistemas - Uninter</span>
+      </div>
+    </li>
+    <li>
+      <div class="item-formacao">
+        <img src="assets/etec-logo.png" alt="ETEC" class="img-formação">
+        <span>Técnico em Informática para Internet - ETEC</span>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- SEÇÃO PARA PORTFOLIO -->
+<section id="portfolio" class="secao">
+  <h2>Portfólio</h2>
+  <div class="grid-portfolio">
+
+    <div class="card-projeto">
+      <img src="powerbi-icon.png" alt="Power BI">
+      <h3>Dashboards Power BI</h3>
+      <p>Criação de painéis interativos para análise de dados com visual atraente e insights automáticos.</p>
+    </div>
+
+    <div class="card-projeto">
+      <img src="vendas-icon.png" alt="Gestão de Vendas">
+      <h3>Gestão de Vendas</h3>
+      <p>Automação de relatórios de vendas, funil comercial e análise de performance de equipes.</p>
+    </div>
+
+    <div class="card-projeto">
+      <img src="manutencao-icon.png" alt="Manutenção">
+      <h3>Manutenção Industrial</h3>
+      <p>Dashboard de manutenção corretiva e preventiva para acompanhamento de falhas e disponibilidade.</p>
+    </div>
+
+    <div class="card-projeto">
+      <img src="logistica-icon.png" alt="Logística">
+      <h3>Gestão Logística</h3>
+      <p>Monitoramento de entregas, roteirização e KPIs logísticos para tomada de decisão estratégica.</p>
+    </div>
+
+    <div class="card-projeto">
+      <img src="marketing-icon.png" alt="Marketing">
+      <h3>Marketing e Campanhas</h3>
+      <p>Análise de resultados de campanhas, conversões, engajamento e público-alvo em redes sociais.</p>
+    </div>
+
+  </div> <br>
+</section>
+
+<!-- SEÇÃO PARA CONTATO -->
+<section class="contato" id="contato">
+  <h2>Contato</h2>
+  <form class="contato-form">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+<!-- links e contatos -->
+  <div class="contato-links">
+    <a href="https://www.linkedin.com/in/lucasdelegredo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="http://weblusca.com.br/" target="_blank" rel="noopener noreferrer">Meu Site</a>
+    <a href="mailto:lucasdelegredo@gmail.com">Email</a>
+  </div>
+</section>
+
+
+  </main>
+</body>
+</html>

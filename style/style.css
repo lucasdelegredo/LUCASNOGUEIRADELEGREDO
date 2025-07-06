@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* SEÇAO DO MENU */ 
+.menu-topo {
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+  padding: 15px 30px;
+}
+
+.menu-topo ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-topo ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-topo ul li a:hover {
+  color: #007BFF;
+}
+#selected{
+    color: #0077b6;
+}
+
+
+/* SEÇAO DO SOBRE MIM E CONTEUDO PRINCIPAL */ 
+.conteudo {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto {
+  margin-bottom: 30px;
+}
+
+.foto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+  object-fit: cover;
+}
+
+.secao {
+  max-width: 800px;
+  text-align: center;
+}
+
+.secao h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.secao p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.secao h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+/* SEÇAO DE FORMAÇÃO */ 
+.lista-formacao {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.lista-formacao li {
+  border: 2px solid #007BFF;
+  border-radius: 35px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+.img-formação{
+    width: 300px ;
+    height: 100px;
+}
+
+
+/* SEÇAO DE PORTFOLIO */ 
+
+.secao h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Grade de projetos */
+.grid-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+/* Card de cada projeto */
+.card-projeto {
+  background-color: #ffffff;
+  border: 2px solid #007BFF;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+}
+
+.card-projeto img {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.card-projeto h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-projeto p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* SEÇAO DE CONTATOS */
+
+.contato-section {
+  max-width: 720px;           
+  margin: 40px auto;           
+  padding: 20px;               
+  background: #f9f9f9;        
+  border-radius: 8px;          
+  box-shadow: 0 0 8px rgba(0,0,0,0.1); 
+  font-family: Arial, sans-serif; 
+}
+
+/* Estilo do título da seção */
+.contato-section h2 {
+  text-align: center;          /* Centraliza o texto do título */
+  margin-bottom: 24px;         /* Espaço abaixo do título */
+  color: #222;                 
+}
+
+/* Formulário com layout em coluna e espaçamento entre os elementos */
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;                   /* Espaço vertical entre inputs, labels e botão */
+}
+
+/* Estilo dos labels dos campos */
+.contato-form label {
+  font-weight: 600;            
+  margin-bottom: 6px;          
+  color: #333;                
+}
+
+/* Estilo dos campos input e textarea */
+.contato-form input,
+.contato-form textarea {
+  padding: 10px;               
+  border: 1.5px solid #ccc;    
+  border-radius: 5px;          
+  font-size: 1rem;             
+  resize: vertical;            /* Permite redimensionar textarea verticalmente */
+  transition: border-color 0.3s; /* Animação suave na borda ao focar */
+}
+
+/* Efeito visual ao focar nos campos input e textarea */
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: #0077b6;       
+  outline: none;               /* Remove contorno padrão para um visual limpo */
+}
+
+/* Estilo do botão de envio */
+.contato-form button {
+  padding: 12px;               
+  background-color: #0077b6;  
+  color: white;               
+  font-weight: 700;            
+  border: none;               
+  border-radius: 6px;          
+  cursor: pointer;             /* Cursor de mão ao passar por cima */
+  transition: background-color 0.3s; /* Transição suave da cor ao hover */
+}
+
+/* Efeito hover no botão */
+.contato-form button:hover {
+  background-color: #005f87;   
+}
+
+/* Container dos links de contato abaixo do formulário */
+.contato-links {
+  margin-top: 28px;            
+  text-align: center;          
+}
+
+/* Estilo dos links */
+.contato-links a {
+  margin: 0 12px;              
+  text-decoration: none;       /* Remove o sublinhado padrão */
+  color: #0077b6;             
+  font-weight: 600;            
+  transition: color 0.3s;      /* Transição suave na cor ao hover */
+}
+
+/* Efeito hover nos links */
+.contato-links a:hover {
+  color: #005f87;              
+}
